@@ -10,9 +10,7 @@ import (
 )
 
 func createTestNextGame(keeper *Keeper, ctx sdk.Context) types.NextGame {
-	item := types.NextGame{
-		Creator: "any",
-	}
+	item := types.NextGame{}
 	keeper.SetNextGame(ctx, item)
 	return item
 }
